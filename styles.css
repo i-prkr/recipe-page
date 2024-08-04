@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    /* list-style-position: inside; */
+}
+
+:root {
+
+    /* fonts */
+    --ff-outfit-sans: "Outfit", sans-serif;
+    --ff-young-serif: "Young Serif", serif;
+    --fs-preset1: 2.5rem;
+    --fs-preset2: 1.75rem;
+    --fs-preset3: 1.25rem;
+    --fs-preset4: 1rem;
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --flh-regular: 100%;
+    --flh-extra: 150%;
+
+    /* colours */
+    --clr-rose-800: hsl(332, 51%, 32%);
+    --clr-rose-50: hsl(330, 100%, 98%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+    --clr-stone-600: hsl(30,10%, 34%);
+    --clr-stone-150: hsl(30,18%, 87%);
+    --clr-stone-100: hsl(30,54%, 90%);
+    --clr-brown-800: hsl(14,45%, 36%);
+    --clr-white: hsl(0,0%, 100%);
+
+    color: var(--clr-stone-600);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: var(--ff-young-serif);
+    font-size: var(--fs-preset1);
+    font-weight: var(--fw-normal);
+    line-height: var(--flh-regular);
+    color: var(--clr-stone-900);
+}
+
+h2 {
+    font-family: var(--ff-young-serif);
+    font-size: var(--fs-preset2);
+    font-weight: var(--fw-normal);
+    line-height: var(--flh-regular);
+}
+
+h3 {
+    font-family: var(--ff-outfit-sans);
+    font-size: var(--fs-preset3);
+    font-weight: var(--fw-semibold);
+    line-height: var(--flh-regular);
+}
+
+p, li, td, tr {
+    font-family: var(--ff-outfit-sans);
+    font-size: var(--fs-preset4);
+    font-weight: var(--fw-normal);
+    line-height: var(--flh-extra);
+}
+
+ul, ol {
+    margin-left: 24px;
+}
+
+li {
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1pt solid var(--clr-stone-150);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 12px;
+
+    > strong {
+        color: var(--clr-brown-800);
+    }
+}
+
+.container {
+    background-color: var(--clr-stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--clr-white);
+}
+
+.card-text {
+    padding-inline: 32px;
+    padding-block: 40px;
+}
+
+.description {
+    margin-top: 24px;
+}
+
+.preparation {
+    padding: 24px;
+    background-color: var(--clr-rose-50);
+    margin-top: 32px;
+
+    > h3 {
+        color: var(--clr-rose-800);
+        margin-bottom: 8px;
+    }
+
+}
+
+.ingredients {
+    margin-block: 32px;
+
+    > h2 {
+        color: var(--clr-rose-800);
+        margin-bottom: 12px;
+    }
+}
+
+.instructions {
+    margin-block: 32px;
+
+    > h2 {
+        color: var(--clr-rose-800);
+        margin-bottom: 16px;
+    }
+
+    > ol > li::marker {
+        font-weight: var(--fw-bold);
+    }
+}
+
+.nutrition {
+    margin-top: 32px;
+
+    > h2 {
+        color: var(--clr-rose-800);
+        margin-bottom: 24px;
+    }
+
+}
+
+/* tablet */
+@media screen and (90rem >= width >= 48rem) {
+
+    .card {
+        border-radius: 1.5rem;
+        max-width: 38.5rem;
+        padding: 40px;
+        margin-block: 8rem;
+    }
+    .card-text {
+        padding: 0px;
+        padding-top: 40px;
+    }
+    img {
+        border-radius: .75rem;
+    }
+}
+
+/* desktop */
+@media screen and (width >= 90rem) {
+
+    .card {
+        border-radius: 1.5rem;
+        max-width: 46rem;
+        padding: 40px;
+        margin-block: 8rem;
+    }
+    .card-text {
+        padding: 0px;
+        padding-top: 40px;
+    }
+    img {
+        border-radius: .75rem;
+    }
+}
