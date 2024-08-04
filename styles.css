@@ -52,13 +52,7 @@ h2 {
     font-size: var(--fs-preset2);
     font-weight: var(--fw-normal);
     line-height: var(--flh-regular);
-}
-
-h3 {
-    font-family: var(--ff-outfit-sans);
-    font-size: var(--fs-preset3);
-    font-weight: var(--fw-semibold);
-    line-height: var(--flh-regular);
+    color: var(--clr-brown-800);
 }
 
 p, li, td, tr {
@@ -97,6 +91,18 @@ td {
     > strong {
         color: var(--clr-brown-800);
     }
+}
+
+hr {
+    background-color: var(--clr-stone-150);
+}
+
+.preparation-heading {
+    font-family: var(--ff-outfit-sans);
+    font-size: var(--fs-preset3);
+    font-weight: var(--fw-semibold);
+    line-height: var(--flh-regular);
+    color: var(--clr-rose-800);
 }
 
 .container {
