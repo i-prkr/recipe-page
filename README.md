@@ -35,3 +35,4 @@ I would like to continue to practice using media queries and working on how I ap
 ## Author
 
 - Frontend Mentor - [@i-prkr](https://www.frontendmentor.io/profile/i-prkr)
+- Github - [Github](https://github.com/i-prkr)
